@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VRChat Custom Avatars | MARVELOUS OLUADAMILARE Fiverr Gig</title>
+    <!-- Tailwind CSS CDN for modern styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles for the sliding hero background and smooth transitions */
+        .hero-slider {
+            height: 80vh; /* Taller hero section */
+            background-color: #1a1a2e; /* Deep space fallback */
+        }
+        .slide {
+            background-size: cover;
+            background-position: center;
+            opacity: 0;
+            transition: opacity 1.5s ease-in-out; 
+            /* Dramatic overlay for text contrast and futuristic feel */
+            background-color: rgba(0, 0, 0, 0.75); 
+            background-blend-mode: multiply;
+        }
+        .slide.active {
+            opacity: 1;
+        }
+        .text-glow {
+            font-family: 'Orbitron', sans-serif; /* Futuristic font */
+            text-shadow: 0 0 10px rgb(109, 233, 233), 0 0 20px #0ff, 0 0 30px #0ff; /* Neon glow effect */
+        }
+        .btn-neon {
+            background-color: #0ff; /* Cyan/Neon base */
+            color: #1a1a2e;
+            box-shadow: 0 0 10px #0ff, 0 0 20px rgba(0, 255, 255, 0.5);
+            transition: all 0.3s ease;
+        }
+        .btn-neon:hover {
+            background-color: #fff;
+            box-shadow: 0 0 15px #fff, 0 0 30px rgba(255, 255, 255, 0.7);
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="bg-[#1a1a2e] font-[Inter] text-gray-100">
+
+    <!-- Navigation Menu: Logo Left, Options Right -->
+    <nav class="bg-[#242442] shadow-xl sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center py-4">
+            <!-- Logo/Title -->
+            <div class="text-2xl font-extrabold">
+                MARVELOUS OLUWADAMILARE
+            </div>
+            <!-- Navigation Links (Streamlined) -->
+            <ul class="flex space-x-8 text-lg font-medium">
+                <li><a href="#home" class="text-gray-3000 hover:text-[#0ff] transition duration-300">Home</a></li>
+                <!-- Gallery removed as requested -->
+                <li><a href="#pricing" class="text-gray-300 hover:text-[#0ff] transition duration-300">Price</a></li>
+                <li><a href="termss.html" class="text-gray-300 hover:text-[#0ff] transition duration-300">Terms & Conditions</a></li>
+                <li><a href="https://sites.google.com/view/foresightdesigngroup?usp=sharing" class="text-gray-300 hover:text-[#0ff] transition duration-300">Portfolio</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Hero Section with Sliding Background Images -->
+    <header id="home" class="hero-slider relative w-full overflow-hidden shadow-2xl">
+        <div id="slide-container" class="absolute inset-0">
+            
+            <!-- Slide 1: Focus on quality VRChat creation -->
+            <div class="slide absolute inset-0 flex items-center justify-center p-8" style="background-image: url('https://placehold.co/1920x1080/0d1a2e/0ff?text=VRChat+Custom+Rigging');">
+                <div class="text-center">
+                    <h1 class="text-6xl md:text-8xl font-black text-white mb-4 text-shadow">
+                        YOUR DREAM AVATAR. REALIZED.
+                    </h1>
+                    <p class="text-xl md:text-2xl text-cyan-150 drop-shadow-md">
+                        The ultimate custom VRChat avatar creation service on Fiverr.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Slide 2: Focus on customer documentation/Fiverr workflow -->
+            <div class="slide absolute inset-0 flex items-center justify-center p-8" style="background-image: url('https://placehold.co/1920x1080/2f1a3e/0ff?text=Full+Body+Tracking+Ready');">
+                <div class="text-center">
+                    <h1 class="text-6xl md:text-8xl font-black text-white mb-5">
+                        FULL BODY TRACKING READY
+                    </h1>
+                    <p class="text-xl md:text-2xl text-purple-300 drop-shadow-md">
+                        Perfect rigging, seamless uploads, guaranteed quality.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Slide 3: Focus on custom commissions -->
+            <div class="slide absolute inset-0 flex items-center justify-center p-8" style="background-image: url('https://placehold.co/1920x1080/3e2d1a/0ff?text=Custom+Design+and+Assets');">
+                <div class="text-center">
+                    <h1 class="text-6xl md:text-8xl font-black text-white mb-4">
+                        COMPLEX COMMISSION? NO PROBLEM.
+                    </h1>
+                    <p class="text-xl md:text-2x1 text-yellow-300 drop-shadow-md">
+                        Fill in your document below to start your custom quote.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        
+        <!-- Document Submission Container: Fiverr Gig Custom Order Form -->
+        <section id="document-input" class="mb-20 bg-[#242442] p-10 rounded-2xl shadow-2xl border-t-8 border-[#0ff]">
+            <h2 class="text-4xl font-bold text-center text-[#0ff] mb-8 text">VRChat Avatar Commission Document</h2>
+            <p class="text-center text-gray-300 mb-10 max-w-4xl mx-auto">
+                Use this form to specify your exact requirements for your custom VRChat avatar. This is mandatory for a precise quote on Fiverr.
+            </p>
+            
+            <form id="project-form" class="space-y-8">
+                <div>
+                    <label for="project-name" class="block text-sm font-medium text-cyan-300 mb-2">Avatar Name / Theme </label>
+                    <input type="text" id="project-name" name="projectName" required class="mt-1 block w-full bg-[#1a1a2e] border border-cyan-500 rounded-lg shadow-inner p-4 focus:ring-[#0ff] focus:border-[#0ff] transition duration-300">
+                </div>
+                
+                <div>
+                    <label for="project-details" class="block text-sm font-medium text-cyan-300 mb-2">Detailed Specifications & Asset Links (Required)</label>
+                    <textarea id="project-details" name="projectDetails" rows="10" required class="mt-1 block w-full bg-[#1a1a2e] border border-cyan-500 rounded-lg shadow-inner p-4 focus:ring-[#0ff] focus:border-[#0ff] transition duration-300" placeholder="Required features: Full Body Tracking? Visemes? Custom Animations? Toggles? Please include links to any base models, textures, or reference images."></textarea>
+                </div>
+                
+                <div class="flex justify-center">
+                    <button type="submit" class="w-full sm:w-auto btn-neon font-bold py-4 px-12 rounded-full text-xl uppercase tracking-widest shadow-2xl">
+                        Submit Specs & Prepare Fiverr Order
+                    </button>
+                </div>
+            </form>
+            <div id="form-message" class="mt-6 text-center text-lg font-bold hidden"></div>
+        </section>
+
+        <!-- Pricing Container -->
+        <section id="pricing" class="mb-20">
+            <h2 class="text-4xl font-bold text-center text-[#0ff] mb-12 text-glow">VRChat Avatar Commission Tiers</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                
+                <!-- Pricing Card 1: Basic Rig -->
+                <div class="bg-[#242442] p-8 rounded-2xl shadow-2xl border-t-8 border-gray-500 transform hover:scale-[1.05] transition duration-300">
+                    <h3 class="text-3xl font-bold text-gray-300 mb-3">Basic Rig/Retexture</h3>
+                    <p class="text-gray-400 mb-6">Simple modifications on an existing base model.</p>
+                    <div class="text-6xl font-extrabold text-cyan-400 mb-6">$80</div>
+                    <ul class="text-gray-300 space-y-4">
+                        <li class="flex items-start"><i class="fas fa-magic text-cyan-400 mr-3 mt-1"></i> Basic Rigging & Hierarchy Fixes</li>
+                        <li class="flex items-start"><i class="fas fa-palette text-cyan-400 mr-3 mt-1"></i> 1 Custom Texture Map (Simple)</li>
+                        <li class="flex items-start"><i class="fas fa-upload text-cyan-400 mr-3 mt-1"></i> VRChat Upload Included</li>
+                        <li class="flex items-start"><i class="fas fa-ban text-red-500 mr-3 mt-1"></i> No Full Body Tracking Support</li>
+                    </ul>
+                    <a href="https://www.fiverr.com/s/m5v88ox" class="mt-10 block text-center bg-gray-600 text-white font-bold py-4 rounded-full hover:bg-gray-500 transition duration-300">Start Basic</a>
+                </div>
+
+                <!-- Pricing Card 2: Pro (Featured) -->
+                <div class="bg-[#1a1a2e] p-10 rounded-2xl shadow-neon border-t-8 border-[#0ff] transform scale-110 transition duration-300 relative z-10">
+                    <span class="absolute top-0 right-0 bg-[#0ff] text-[#1a1a2e] text-sm font-black px-4 py-1 rounded-bl-xl shadow-lg uppercase">Best Value</span>
+                    <h3 class="text-3xl font-bold text-white mb-3 text-glow">Full Body Ready</h3>
+                    <p class="text-cyan-200 mb-6">The definitive package for serious VRChat users.</p>
+                    <div class="text-6xl font-extrabold text-[#0ff] mb-6">$150</div>
+                    <ul class="text-white space-y-4">
+                        <li class="flex items-start"><i class="fas fa-star text-[#0ff] mr-3 mt-1"></i> Full Body Tracking Optimization**</li>
+                        <li class="flex items-start"><i class="fas fa-trowel text-[#0ff] mr-3 mt-1"></i> Custom Shader/Materials Setup</li>
+                        <li class="flex items-start"><i class="fas fa-hand-point-up text-[#0ff] mr-3 mt-1"></i> 3 Custom Toggle Accessories/Outfits</li>
+                        <li class="flex items-start"><i class="fas fa-edit text-[#0ff] mr-3 mt-1"></i> Unlimited Revisions (Within Scope)</li>
+                    </ul>
+                    <a href="https://www.fiverr.com/s/m5v88ox" class="mt-10 block text-center btn-neon font-bold py-4 rounded-full text-xl shadow-2xl">Go Pro Now</a>
+                </div>
+                
+                <!-- Pricing Card 3: Complex Commission -->
+                <div class="bg-[#242442] p-8 rounded-2xl shadow-2xl border-t-8 border-gray-500 transform hover:scale-[1.05] transition duration-300">
+                    <h3 class="text-3xl font-bold text-gray-300 mb-3">Complex Commission</h3>
+                    <p class="text-gray-400 mb-6">For ground-up models, complex physics, and unique features.</p>
+                    <div class="text-6xl font-extrabold text-cyan-400 mb-6">$300+</div>
+                    <ul class="text-gray-300 space-y-4">
+                        <li class="flex items-start"><i class="fas fa-cubes text-cyan-400 mr-3 mt-1"></i> Full Custom Model Creation</li>
+                        <li class="flex items-start"><i class="fas fa-atom text-cyan-400 mr-3 mt-1"></i> Advanced Physics Bone Setup</li>
+                        <li class="flex items-start"><i class="fas fa-cog text-cyan-400 mr-3 mt-1"></i> Custom Unity Components/Scripts</li>
+                        <li class="flex items-start"><i class="fas fa-hourglass-half text-cyan-400 mr-3 mt-1"></i> Priority Fast-Track Delivery</li>
+                    </ul>
+                    <a href="https://www.fiverr.com/s/m5v88ox" class="mt-10 block text-center bg-gray-600 text-white font-bold py-4 rounded-full hover:bg-gray-500 transition duration-300">Inquire for Quote</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Terms and Conditions Placeholder -->
+        <section id="terms" class="mb-16 bg-[#242442] p-10 rounded-2xl shadow-xl">
+            <h2 class="text-4xl font-bold text-center text-[#0ff] mb-8 text-glow">Terms and Conditions Summary</h2>
+            <p class="text-gray-400 max-w-4xl mx-auto">
+                All VRChat avatar orders are handled exclusively via the Fiverr platform to ensure secure payments and buyer protection. The prices listed above are base starting rates. Final pricing will be confirmed via a custom Fiverr offer after we review your detailed document submission. Work begins only upon full purchase of the Fiverr gig. Revisions vary by tier. You must legally own the rights to all assets provided.
+            </p>
+        </section>
+        
+    </main>
+    
+    <!-- Footer and Social Contact -->
+    <footer class="bg-black py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h3 class="text-2xl font-semibold mb-6 text-cyan-400">Find My Fiverr Gig & Connect</h3>
+            <div class="flex justify-center space-x-8 mb-8">
+                <!-- Social Icons -->
+                <!-- Fiverr link is most prominent -->
+                <a href="https://www.fiverr.com/s/m5v88ox" class="text-cyan-400 hover:text-white transition duration-300" aria-label="Fiverr Gig"><i class="fas fa-handshake text-4xl"></i></a> 
+                <a href="https://wa.me/qr/KECALBBIIEBNM1 " class="text-white hover:text-green-500 transition duration-300" aria-label="WhatsApp"><i class="fab fa-whatsapp text-3xl"></i></a>
+                <a href="https://discord.gg/zXQ2bvct" class="text-white hover:text-purple-500 transition duration-300" aria-label="Discord"><i class="fab fa-discord text-3xl"></i></a>
+                <a href="https://x.com/Drose12445?t=mxu9t6AzZokzRP_ARSDaPw&s=09" class="text-white hover:text-blue-400 transition duration-300" aria-label="Twitter"><i class="fab fa-twitter text-3xl"></i></a>
+                <a href="https://www.facebook.com/share/16N8abGFcy/" class="text-white hover:text-blue-600 transition duration-300" aria-label="Facebook"><i class="fab fa-facebook-f text-3xl"></i></a>
+            </div>
+            <p class="text-sm text-gray-500">&copy; 2025 MARVELOUS | All rights reserved. | Fiverr Seller: [MarvelD]</p>
+        </div>
+    </footer>
+    
+    <script>
+        // --- Image Slider Script ---
+        const slides = document.querySelectorAll('.slide');
+        let currentSlide = 0;
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.remove('active');
+                if (i === index) {
+                    slide.classList.add('active');
+                }
+            });
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        window.onload = function() {
+            if (slides.length > 0) {
+                showSlide(0);
+                setInterval(nextSlide, 5000); // Change slide every 5 seconds
+            }
+        };
+        
+        // --- Form Submission Script (Simulated) ---
+        document.getElementById('project-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const messageDiv = document.getElementById('form-message');
+            messageDiv.textContent = 'Specs received! Checking Fiverr for your custom offer. Please proceed to the next level. Choose the price you want.';
+            messageDiv.classList.remove('hidden');
+            messageDiv.classList.add('text-[#0ff]');
+            // In a real app, you would send this data to a server/database/email here.
+            this.reset();
+            setTimeout(() => {
+                messageDiv.classList.add('hidden');
+            }, 8000);
+        });
+    </script>
+
+</body>
+</html>
